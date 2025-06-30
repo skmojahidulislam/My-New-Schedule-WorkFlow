@@ -1,0 +1,13 @@
+name: Schedule Work Flow UTC
+
+on:
+  schedule:
+    - cron: '33 11 * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Message
+        run: echo "Hello I am Mujahid"
